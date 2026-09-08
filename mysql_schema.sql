@@ -1,7 +1,3 @@
--- =========================================================
--- RETAIL SALES DATABASE SCHEMA (MySQL 8.0+)
--- Portfolio Project: Business Analyst SQL Skills
--- =========================================================
 
 CREATE DATABASE IF NOT EXISTS retail_sales;
 USE retail_sales;
