@@ -1,7 +1,4 @@
--- =========================================================
--- BUSINESS ANALYST SQL PORTFOLIO — ANALYSIS QUERIES (MySQL 8.0+)
--- Organized from basic -> intermediate -> advanced
--- =========================================================
+
 
 USE retail_sales;
 
@@ -197,5 +194,5 @@ JOIN customers c ON c.customer_id = o.customer_id
 JOIN order_items oi ON oi.order_id = o.order_id
 JOIN products p ON p.product_id = oi.product_id;
 
--- Example use: revenue by category, completed orders only
--- SELECT category, SUM(line_revenue) FROM vw_sales_summary WHERE order_status='Completed' GROUP BY category;
+
+SELECT category, SUM(line_revenue) FROM vw_sales_summary WHERE order_status='Completed' GROUP BY category;
