@@ -1,6 +1,4 @@
-import csv
-import random
-from datetime import date, timedelta
+
 
 random.seed(42)
 
