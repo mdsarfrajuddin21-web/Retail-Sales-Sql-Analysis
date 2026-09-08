@@ -1,21 +1,4 @@
--- =========================================================
--- LOAD CSV DATA INTO MYSQL
--- Run this AFTER mysql_schema.sql
--- =========================================================
--- NOTE: LOAD DATA INFILE requires the CSV files to be readable by the
--- MySQL server process, and MySQL's "secure_file_priv" setting often
--- restricts which folder you can load from. Two options:
---
--- OPTION A (simplest for beginners): Use MySQL Workbench's
---   "Table Data Import Wizard" (right-click a table > Table Data Import
---   Wizard) and point it at each CSV. No path/permission issues.
---
--- OPTION B: Use LOAD DATA INFILE as below. First check your allowed
---   folder with:  SHOW VARIABLES LIKE 'secure_file_priv';
---   Then copy the CSVs into that folder and adjust the paths below.
---   (On some setups you can use LOAD DATA LOCAL INFILE instead, which
---   reads from your local machine rather than the server's folder —
---   you may need to enable local_infile: SET GLOBAL local_infile = 1;)
+
 
 USE retail_sales;
 
